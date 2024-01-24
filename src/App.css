@@ -56,3 +56,19 @@ section {
     transform: rotate(360deg);
   }
 }
+
+/* Estilo general del Accordion */
+.custom-accordion {
+  border: 10px solid #0b1115; /* Color del borde del Accordion */
+  border-radius: 8px; /* Bordes redondeados */
+   }
+   /* Estilo de los ítems del Accordion */
+.custom-accordion-item {
+  background-color: #228d32; /* Color de fondo de los ítems */
+  border-bottom: 1px solid #dee2e6; /* Borde inferior de los ítems */
+   }
+   /* Estilo del encabezado del Accordion */
+.custom-accordion-header {
+  background-color: #1d7f30; /* Color de fondo del encabezado */
+  color: #ffffff; /* Color del texto del encabezado */
+}

@@ -4,16 +4,16 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 function NavBar() {
   return (
-    <Navbar expand="lg" className="bg-body-tertiary justify-content-between">
+    <Navbar expand="lg" className="bg-success justify-content-between">
     <Container>
-      <Navbar.Brand href="#home">Form App</Navbar.Brand>
+      <Navbar.Brand href="#home">Gourmet Gatuno</Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav     className="me-auto my-2 my-lg-0"
             style={{ maxHeight: '100px' }}
             navbarScroll>
-          <Nav.Link href="#info">Sobre nuestros productos</Nav.Link>
-          <Nav.Link href="#link">Imágenes</Nav.Link>
+          <Nav.Link href="#info">Quienes somos</Nav.Link>
+          <Nav.Link href="#link">Productos</Nav.Link>
           <Nav.Link href="#form">Contáctanos</Nav.Link>
 
 

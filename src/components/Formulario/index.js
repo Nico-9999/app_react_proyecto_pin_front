@@ -29,7 +29,7 @@ const Formulario = () => {
         } catch (error) {
           console.error('Error al enviar datos al backend:', error);
         };
-        alert(`Hola, ${persona.nombre} Bienvenido.`);
+        alert(`Hola, ${persona.nombre} tu consulta se ha envíado correctamente. A la brevedad estaremos en contacto.`);
 
     };
   
