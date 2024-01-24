@@ -3,23 +3,23 @@
     margin: 20px;
   }
   
-  /* Estilo de los ítems del Accordion */
+
   .custom-accordion-item {
-    background-color: #96d66c; /* Fondo gris claro */
-    border: 1px solid #dee2e6; /* Borde gris */
+    background-color: #96d66c; 
+    border: 1px solid #dee2e6;
     border-radius: 8px;
     margin-bottom: 5px;
   }
   
-  /* Estilo del encabezado del Accordion */
+  
   .custom-accordion-header {
-    background-color: #25721e; /* Fondo azul */
+    background-color: #25721e; 
     color: #7a9872;
     padding: 5px;
     cursor: pointer;
   }
   
-  /* Estilo del cuerpo del Accordion */
+
   .custom-accordion-body {
     padding: 15px;
   }

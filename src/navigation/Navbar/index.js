@@ -4,7 +4,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 function NavBar() {
   return (
-    <Navbar expand="lg" className="bg-success justify-content-between">
+    <Navbar expand="lg" style={{ backgroundColor: '#FFFF99' }} className="justify-content-between">
     <Container>
       <Navbar.Brand href="#home">Gourmet Gatuno</Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
