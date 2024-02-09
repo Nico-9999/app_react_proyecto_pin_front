@@ -13,11 +13,6 @@
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  color: white;
-}
-
   
 section {
   margin: 20px
@@ -26,27 +21,74 @@ section {
 .App-link {
   color: #61dafb;
 }
-.form {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-}
-.label{
-  display: flex;
-  flex-direction: column;
-  width: 35%;
 
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.textarea{
+  margin: 0px 20px;
+}
+
+.contact{
+  text-align: center;
 }
 .btnSubmit{
-  background-color: #0D6EFD;
+  background-color: #c1f787;
   color: white;
   border: none;
   border-radius: 8px; 
   padding: 5px 20px;
 
 }
+.carousel-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 768px;
+ }
+ .form-container{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin: 8px; /* Espaciado entre los grupos de formulario */
+}
+.input{
+  width: 500px;
+  margin: 5px;
+  border-radius: 5px;
+}
+.img-container-2{
+  width: 100%;
+}
+
+ .form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: rgb(255, 255, 241);
+  color: rgb(34, 28, 28);
+  padding: 5px 10px;
+  border-radius: 4px;
+}
+
+ .img-cat{
+  height: auto;
+  width: 80%; /* Ajustar el ancho máximo según sea necesario */
+  object-fit: cover;
+  border-radius: 4px; 
+
+}
+ 
+
 
 @keyframes App-logo-spin {
   from {
@@ -57,18 +99,3 @@ section {
   }
 }
 
-/* Estilo general del Accordion */
-.custom-accordion {
-  border: 10px solid #0b1115; /* Color del borde del Accordion */
-  border-radius: 8px; /* Bordes redondeados */
-   }
-   /* Estilo de los ítems del Accordion */
-.custom-accordion-item {
-  background-color: #228d32; /* Color de fondo de los ítems */
-  border-bottom: 1px solid #dee2e6; /* Borde inferior de los ítems */
-   }
-   /* Estilo del encabezado del Accordion */
-.custom-accordion-header {
-  background-color: #1d7f30; /* Color de fondo del encabezado */
-  color: #ffffff; /* Color del texto del encabezado */
-}

@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import axios from 'axios';
 
 
+
+
 const Formulario = () => {
     const [persona, setPersona] = useState({
       nombre: '',
@@ -35,29 +37,32 @@ const Formulario = () => {
   
   
     return (
+    <div className="form-container">
       <form id="form" className='form' onSubmit={handleSubmit}>
-        <label className="label">
-          Nombre:
-          <input type="text" placeholder="Nombre" name="nombre" value={persona.nombre} onChange={handleChange} />
-        </label>
-        <br />
-        <label className="label">
-          Apellido:
-          <input type="text" placeholder="Apellido" name="apellido" value={persona.apellido} onChange={handleChange} />
-        </label >
-        <br />
-        <label className="label">
-          Correo Electrónico:
-          <input type="email" placeholder="Correo Electrónico" name="mail" value={persona.mail} onChange={handleChange} />
-        </label>
-        <br />
-        <label className="label">
-          Mensaje :
-          <textarea name="mensaje" placeholder="Escribe tu mensaje aquí" value={persona.mensaje} onChange={handleChange} />
-        </label>
-        <br />
+        <h2 className="contact">Contactanos</h2>
+        <div className="form-group">
+          <label htmlFor="nombre">Nombre:</label>
+          <input type="text" id="nombre" placeholder="Nombre" name="nombre" value={persona.nombre} onChange={handleChange} className="input"/>
+        </div>
+        <div className="form-group">
+          <label htmlFor="apellido">Apellido:</label>
+          <input type="text" id="apellido" placeholder="Apellido" name="apellido" value={persona.apellido} onChange={handleChange} className="input"/>
+        </div>
+        <div className="form-group">
+          <label htmlFor="mail">Correo Electrónico:</label>
+          <input type="email" id="mail" placeholder="Correo Electrónico" name="mail" value={persona.mail} onChange={handleChange} className="input"/>
+        </div>
+        <div className="form-group">
+          <label htmlFor="mensaje">Mensaje:</label>
+          <textarea id="mensaje" name="mensaje" className="input" placeholder="Escribe tu mensaje aquí" value={persona.mensaje} onChange={handleChange} />
+        </div>
         <button className="btnSubmit" type="submit">Enviar</button>
       </form>
+
+      <div className="img-container-2">
+        <img src="./gato-contacto.png" alt="gato con telefono" className="img-cat"/>
+      </div>
+    </div>
     );
   }
 export default Formulario;
